@@ -1,0 +1,7 @@
+torch>=2.1.0
+tiktoken
+numpy
+datasets
+tqdm
+wandb
+lm-eval

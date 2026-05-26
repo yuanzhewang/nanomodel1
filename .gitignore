@@ -1,0 +1,38 @@
+# Data and checkpoints live on NFS, not in git
+/data_symlink
+/checkpoints_symlink
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Training artifacts
+*.pt
+*.bin
+*.safetensors
+wandb/
+runs/
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
