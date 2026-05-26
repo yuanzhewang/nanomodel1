@@ -36,9 +36,6 @@ class NanoModelWrapper(torch.nn.Module):
 
 def build_lm_eval_model(checkpoint_path: str):
     """Load checkpoint and wrap for lm-eval-harness."""
-    import lm_eval
-    from lm_eval.models.huggingface import HFLM
-
     checkpoint = torch.load(checkpoint_path, map_location="cuda", weights_only=False)
 
     if "model_config" in checkpoint:
